@@ -1,0 +1,12 @@
+{
+  "name": "express-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "middleware_class",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "script": {
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

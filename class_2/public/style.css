@@ -1,0 +1,108 @@
+body{
+    background-color: black;
+    margin: 2px;
+}
+
+.imgdiv{
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url("./images/me.jpg");
+    background-position: top;
+    background-size: cover;
+    align-content: center;
+    font-family: 'Times New Roman', Tahoma, Verdana, sans-serif;
+    font-size: 34px;
+}
+
+.navcontainer{
+    flex-wrap: wrap;
+    height: 50px;
+    color: white;
+    margin: 50px;
+    margin-top: -50px;
+}
+
+button{
+    height: 40px; 
+    background-color: rgb(104, 43, 226); 
+    width: 80px; border-radius: 5px;
+    font-weight: lighter;
+    font-size: medium;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+    text-decoration-style: solid;
+    color: black;
+}
+.mybody p{
+    color: black;
+    font-size: 16px;
+}
+
+.mybody{
+    background-color: white;
+    flex-wrap: wrap;
+    padding: 50px;
+    color: rgb(104, 43, 226);
+    height: 500px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+.education{
+    background-color: rgba(178, 160, 186, 0.365);
+    padding: 10px;
+    color: black;
+}
+.experience{
+    background-color: rgba(0, 0, 255, 0.705); 
+    color: white;
+    padding: 50px;
+    height: 650px;
+    margin-top: 5px;
+}
+.list{
+    align-content: center; 
+    margin-left: 50px;  
+    display: grid; 
+}
+.numbers{
+    border-radius: 2px; 
+    background-color: rgb(197, 194, 194); 
+    font-weight: bold;
+    color: black; 
+    align-content: center; 
+    align-self: center;
+    padding: 10px;
+    position: relative; left: -50px;
+    margin-top: 5px;
+}
+li{
+    color: black;
+}
+.projectdiv{
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url("https://png.pngtree.com/thumb_back/fw800/background/20241217/pngtree-a-focused-individual-analyzing-multiple-computer-screens-displaying-data-and-graphs-image_16793382.jpg");
+    background-position: top;
+    background-size: cover;
+    align-content: center;
+    font-family: 'Times New Roman', Tahoma, Verdana, sans-serif;
+    color: white;
+    margin-top: 5px;
+}
+
+.projectdiv h3{
+    font-size: 25px;
+}
+
+.projectdiv p{
+    font-size: 20px;
+}
+.projectbody{
+    flex-wrap: wrap;
+    padding: 50px;
+    height: 400px;
+    /* margin: 2px; */
+}
