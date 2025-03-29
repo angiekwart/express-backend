@@ -1,0 +1,12 @@
+Today's lesson is to create a server for a bank.
+
+The bank has provided you with its name, location, branch, phone, address, accountnumber.
+To build the server, map out the structure of the architecture.
+Server ---> Router --> Controller --> Service --> Repository --> Database then...
+Database ---> Repository --> Service --> Controller --> Router --> Server
+
+So, import express, body parser and cors.
+create a server and let server use the body parser.
+Note that the body parser is used to parse the body of the request.
+
+Let the server listen to a port of your choice.

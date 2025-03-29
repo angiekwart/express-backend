@@ -1,44 +1,28 @@
-// // import http module
-// const http = require('http');
-// const server = http.createServer();
-// create server
-const express = require('express');
-const server = express();
-
+// import http module
+const http = require("http");
 
 
 // creating handlers for the routes
-const handleHomePage = (req, res) => {
-    res.send("This is the middleware");
-    console.log("Welcome to my Node.js server");
-}
-const handleContact = (req, res) => {
-    res.send("Contact us at: example@example.com");
-    console.log("Contact is shared.");
-}
-const handleContactMiddleware = (req, res, next) => {
-    res.send("This is the middleware contact page"); 
-    console.log("Middleware Contact.");
-    next();
-}
-
-const handleAbout = (req, res) => {
-    res.send("This the about page");
-    console.log("Request is received");
-}
-const handleAboutMiddleware = (req, res, next) => {
-    res.send("This the middleware about page");
-    console.log("Request is received");
-    next();
+const handleAllRequest = (req, res) => {
+    const url = req.url;
+    if (url === '/') {
+        res.write("<h1>Welcome to my Node.js server</h1>");
+    } else if (url === '/contact') {
+        res.write("<h1>Contact us at: example@example.com</h1>");
+    } else if (url === '/about') {
+        res.write("<h1>This the about page</h1>");
+    } else if (url === '/services'){
+        res.write("<h1>This the services page</h1>");
+    } else{
+        res.write("Page not found");
+    }
+    console.log(req);
 }
 
 
-// create my routes and methods
-server.post('/about', handleAboutMiddleware, handleAbout);
-server.put('/contact', handleContactMiddleware, handleContact);
-server.use('/', handleHomePage);
 
-
+// create server to listen to the request
+const server = http.createServer(handleAllRequest);
 
 //listen on port 5000
-server.listen(5000, 'localhost', ()=>console.log("Server is running on port 5000"));
+server.listen(5000, "localhost", ()=>console.log("Server is running on port 5000"));
